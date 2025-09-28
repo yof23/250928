@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+  width: 100svw;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fff0e0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body header h1 {
+  text-align: center;
+  margin: 24px 0;
+  font-size: 24px;
+}
+body main #myAssetArea {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 12px auto 24px;
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+}
+body main #myAssetArea #myAsset {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 8px;
+}
+body main #myStatusArea {
+  margin: 24px 12px 0;
+}
+body main #myStatusArea #myMoneyArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0 24px;
+}
+body main #myStatusArea #myMoneyArea dt {
+  margin-right: 12px;
+}
+body main #myStatusArea #myMoneyArea dd #myMoney {
+  font-size: 24px;
+  font-weight: bold;
+}
+body main #stockPriceArea {
+  margin: 0 24px;
+  border: 6px solid #d6932e;
+  border-radius: 24px;
+  padding: 24px 24px 24px 36px;
+  background-color: #fff8f0;
+}
+body main #stockPriceArea dl {
+  display: flex;
+  align-items: center;
+  line-height: 1.8;
+}
+body main #stockPriceArea dl dt {
+  width: 6em;
+  margin-right: 24px;
+}
+body main #stockPriceArea dl #stockPrice {
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+body main #stockPriceArea dl #stockValue {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+body main #myMoneyArea {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 60px 0 36px;
+}
+body main #myMoneyArea dt {
+  margin-right: 12px;
+}
+body main #myMoneyArea dd #myMoney {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+body main #buySellArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+body main #buySellArea .buy-sell-Button {
+  cursor: pointer;
+  border: 5px solid #888;
+  border-radius: 24px;
+  padding: 18px 42px 24px;
+  background-color: #fff8f0;
+  box-shadow: 0 8px 0px #ccc;
+}
+body main #buySellArea .buy-sell-Button:hover {
+  background-color: #fee8e8;
+}
+body main #buySellArea .buy-sell-Button:active {
+  box-shadow: none;
+  position: relative;
+  top: 8px;
+}
+body main #buySellArea .buy-sell-Button span {
+  line-height: 2;
+}
+body main #buySellArea .buy-sell-Button label {
+  display: block;
+}
+body main #buySellArea .buy-sell-Button label input {
+  pointer-events: none;
+  width: 4em;
+  margin-right: 6px;
+  padding: 6px 12px;
+  text-align: right;
+  border: 4px solid #888;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+body footer {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #666;
+  margin-left: 8px;
+  line-height: 1;
+}/*# sourceMappingURL=styles.css.map */

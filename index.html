@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <title>かずくんの株</title>
+</head>
+<body>
+
+  <header>
+    <h1>かずくんの株</h1>
+  </header>
+  
+  <main>
+    <dl id="myAssetArea">
+      <dt>いまの資産は</dt>
+      <dd id="myAsset"></dd>
+      <dd>円です</dd>
+    </dl>
+
+    <div id="stockPriceArea">
+      <dl>
+        <dt>株価</dt>
+        <dd><span id="stockPrice"></span>円 （ <span id="priceChange"></span> 円 ）</dd>
+      </dl>
+      <dl>
+        <dt>持っている数</dt>
+        <dd><span id="stockValue"></span>株</dd>
+      </dl>
+    </div>
+
+    <dl id="myMoneyArea">
+      <dt>持っている現金</dt>
+      <dd><span id="myMoney"></span>円</dd>
+    </dl>
+
+    <div id="buySellArea">
+      <div id="buyBtn" class="buy-sell-Button">
+        <span>買う</span>
+        <label for="buyBtnValue"><input type="number" name="buyBtnValue" id="buyBtnValue" min="0" onclick="event.stopPropagation();">株</label>
+        <span class="small-text">（手数料10円）</span>
+      </div>
+      <div id="sellBtn" class="buy-sell-Button">
+        <span>売る</span>
+        <label for="sellBtnValue"><input type="number" name="sellBtnValue" id="sellBtnValue" min="0" onclick="event.stopPropagation();">株</label>
+        <span class="small-text">（手数料10円）</span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>かずくんの株 &copy; 2024</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
