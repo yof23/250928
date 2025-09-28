@@ -126,6 +126,8 @@ function loadData() {
   const money = localStorage.getItem('yh_myMoneyVal');
   if (stock !== null) stockValueVal = Number(stock);
   if (money !== null) myMoneyVal = Number(money);
+  myAssetVal = stockPriceVal * stockValueVal;
+  myAsset.textContent = myAssetVal.toLocaleString();
 }
 
 // ページ立ち上げ時にローカルストレージから読込
@@ -147,7 +149,7 @@ buyBtn.addEventListener('click', () => {
     myMoney.textContent = myMoneyVal.toLocaleString();
     myAssetVal = stockPriceVal * stockValueVal;
     myAsset.textContent = myAssetVal.toLocaleString();
-    buyBtnVlue.value = '';
+    buyBtnVlue.value = 1;
     saveData(); // 追加
   } else if (myMoneyVal < totalBuyCost) {
     alert('現金が足りません');
@@ -166,7 +168,7 @@ sellBtn.addEventListener('click', () => {
     myMoney.textContent = myMoneyVal.toLocaleString();
     myAssetVal = stockPriceVal * stockValueVal;
     myAsset.textContent = myAssetVal.toLocaleString();
-    sellBtnVlue.value = '';
+    sellBtnVlue.value = 1;
     saveData(); // 追加
   } else if (stockValueVal < sellValue) {
     alert('株数が足りません');
