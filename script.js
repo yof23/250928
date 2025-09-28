@@ -55,7 +55,7 @@ buyBtn.addEventListener('click', () => {
     myMoney.textContent = myMoneyVal.toLocaleString();
     myAssetVal = stockPriceVal * stockValueVal;
     myAsset.textContent = myAssetVal.toLocaleString();
-    buyBtnVlue.value = '';
+    buyBtnVlue.value = 1;
   } else if (myMoneyVal < totalBuyCost) {
     alert('現金が足りません');
   } else if (buyValue <= 0) {
@@ -74,7 +74,7 @@ sellBtn.addEventListener('click', () => {
     myMoney.textContent = myMoneyVal.toLocaleString();
     myAssetVal = stockPriceVal * stockValueVal;
     myAsset.textContent = myAssetVal.toLocaleString();
-    sellBtnVlue.value = '';
+    sellBtnVlue.value = 1;
   } else if (stockValueVal < sellValue) {
     alert('株数が足りません');
   } else if (sellValue <= 0) {
