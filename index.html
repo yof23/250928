@@ -38,13 +38,19 @@
 
     <div id="buySellArea">
       <div id="buyBtn" class="buy-sell-Button">
-        <span>買う</span>
-        <label for="buyBtnValue"><input type="number" name="buyBtnValue" id="buyBtnValue" value="1" min="0" onclick="event.stopPropagation();">株</label>
+        <span class="buy-ttl">買う</span>
+        <!-- <label for="buyBtnValue"><input type="number" name="buyBtnValue" id="buyBtnValue" value="1" min="0" onclick="event.stopPropagation();">株</label> -->
+        <div class="btnvalue-container">
+          <span id="buyBtnValue">1</span>株
+        </div>
         <span class="small-text">（手数料10円）</span>
       </div>
       <div id="sellBtn" class="buy-sell-Button">
-        <span>売る</span>
-        <label for="sellBtnValue"><input type="number" name="sellBtnValue" id="sellBtnValue" value="1"  min="0" onclick="event.stopPropagation();">株</label>
+        <span class="sell-ttl">売る</span>
+        <!-- <label for="sellBtnValue"><input type="number" name="sellBtnValue" id="sellBtnValue" value="1"  min="0" onclick="event.stopPropagation();">株</label> -->
+        <div class="btnvalue-container">
+          <span id="sellBtnValue">1</span>株
+        </div>
         <span class="small-text">（手数料10円）</span>
       </div>
     </div>

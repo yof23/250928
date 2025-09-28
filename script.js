@@ -140,7 +140,8 @@ myAsset.textContent = myAssetVal.toLocaleString();
 // 購入・売却時に保存
 buyBtn.addEventListener('click', () => {
   if (document.activeElement === buyBtnVlue) return;
-  const buyValue = Number(buyBtnVlue.value);
+  // const buyValue = Number(buyBtnVlue.value);
+  const buyValue = Number(buyBtnValue.textContent);
   const totalBuyCost = (stockPriceVal * buyValue) + 10;
   if (buyValue > 0 && myMoneyVal >= totalBuyCost) {
     stockValueVal += buyValue;
@@ -153,13 +154,16 @@ buyBtn.addEventListener('click', () => {
     saveData(); // 追加
   } else if (myMoneyVal < totalBuyCost) {
     alert('現金が足りません');
+    return;
   } else if (buyValue <= 0) {
     alert('購入株数は0以上で入力してください');
+    return;
   }
 });
 sellBtn.addEventListener('click', () => {
   if (document.activeElement === sellBtnVlue) return;
-  const sellValue = Number(sellBtnVlue.value);
+  // const sellValue = Number(sellBtnVlue.value);
+  const sellValue = Number(sellBtnValue.textContent);
   const totalSellCost = (stockPriceVal * sellValue) - 10;
   if (sellValue > 0 && stockValueVal >= sellValue) {
     stockValueVal -= sellValue;
@@ -172,7 +176,9 @@ sellBtn.addEventListener('click', () => {
     saveData(); // 追加
   } else if (stockValueVal < sellValue) {
     alert('株数が足りません');
+    return;
   } else if (sellValue <= 0) {
     alert('売却株数は0以上で入力してください');
+    return;
   }
 });

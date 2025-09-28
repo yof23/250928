@@ -139,4 +139,23 @@ body footer {
   color: #666;
   margin-left: 8px;
   line-height: 1;
+}
+
+.buy-ttl, .sell-ttl {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.buy-ttl {
+  color: #d43;
+}
+
+.sell-ttl {
+  color: #36a;
+}
+
+.btnvalue-container {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
