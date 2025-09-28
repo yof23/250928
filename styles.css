@@ -92,13 +92,13 @@ body main #buySellArea {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 18px;
 }
 body main #buySellArea .buy-sell-Button {
   cursor: pointer;
   border: 5px solid #888;
   border-radius: 24px;
-  padding: 18px 28px 24px;
+  padding: 18px 24px 24px;
   background-color: #fff8f0;
   box-shadow: 0 8px 0px #ccc;
 }
@@ -118,7 +118,7 @@ body main #buySellArea .buy-sell-Button label {
 }
 body main #buySellArea .buy-sell-Button label input {
   pointer-events: none;
-  width: 4em;
+  width: 3em;
   margin-right: 6px;
   padding: 6px 12px;
   text-align: right;
