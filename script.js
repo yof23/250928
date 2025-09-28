@@ -82,16 +82,6 @@ sellBtn.addEventListener('click', () => {
   }
 });
 
-let previousPrice = stockPriceVal; 
-setInterval(() => {
-  if (previousPrice !== stockPriceVal) {
-    const change = stockPriceVal - previousPrice;
-    const changeSign = change > 0 ? '+' : '';
-    priceChange.textContent = `${changeSign}${change.toLocaleString()}`;
-    previousPrice = stockPriceVal;
-  }
-}, 1000); // 1秒ごとにチェック
-
 // inputにフォーカスがあるときはbuyBtnとsellBtnのクリックイベントを発火させない
 buyBtnVlue.addEventListener('click', (event) => {
   event.stopPropagation();
